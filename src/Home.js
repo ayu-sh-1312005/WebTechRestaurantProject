@@ -12,7 +12,7 @@ function Home() {
                     <p className='text-sm'>Indulge in a culinary journey at our restaurant, where wholesome flavors and nourishing ingredients come together to create a delightful and health-conscious dining experience. Elevate your palate with our vibrant menu, crafted to redefine the intersection of taste and well-being.</p>
                     <div className='w-full'>
                         <Link to={'/booktable'}>
-                        <div className='bg-orange-600 w-fit flex items-center justify-between text-white font-extrabold text-3xl gap-3 text-center p-5 rounded-xl'>Visit Now <div><FaArrowRight /></div></div>
+                        <div className='bg-orange-600 shadow-2xl hover:scale-105 transition-all duration-200 w-fit flex items-center justify-between text-white font-extrabold text-3xl gap-3 text-center p-5 rounded-xl'>Visit Now <div><FaArrowRight /></div></div>
                         </Link>
                     </div>
                 </div>
