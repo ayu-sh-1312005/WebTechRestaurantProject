@@ -1,5 +1,6 @@
 import React from 'react'
-import FoodCard from './FoodCard'
+import FoodCard from './FoodCard';
+import FoodMenuData from './FoodMenuData';
 
 function FoodMenu() {
   return (
@@ -8,18 +9,7 @@ function FoodMenu() {
             <p className='text-orange-600 font-extrabold text-7xl'>Food Menu</p>
         </div>
         <div className='flex flex-wrap gap-2'>
-            <FoodCard />
-            <FoodCard />
-            <FoodCard />
-            <FoodCard />
-            <FoodCard />
-            <FoodCard />
-            <FoodCard />
-            <FoodCard />
-            <FoodCard />
-            <FoodCard />
-            <FoodCard />
-            <FoodCard />
+          {FoodMenuData.map((data)=> <FoodCard id={data.id} url={data.url} cost={data.cost} name={data.name} />)}
         </div>
     </div>
   )

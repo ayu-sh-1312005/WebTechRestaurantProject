@@ -1,5 +1,6 @@
 import React from 'react'
 import ChefCard from './ChefCard'
+import ChefDetails from './ChefDetails'
 
 function About() {
   return (
@@ -21,10 +22,7 @@ function About() {
                 <p className='font-extrabold text-orange-600 text-6xl'>Our Golden Chefs</p>
             </div>
             <div className='flex justify-between items-center gap-5 mx-auto'>
-                <ChefCard />
-                <ChefCard />
-                <ChefCard />
-                <ChefCard />
+                {ChefDetails.map((data)=> <ChefCard id={data.id} name={data.name} url={data.url} quote={data.quote} /> )}
             </div>
         </div>
 
